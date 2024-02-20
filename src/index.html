@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFC</title>
+    <link rel="shortcut icon" href="../assets/logo-bg/logo-ffc.png" type="image/x-icon">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../public/output.css">
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="../public/swiper-bundle.min.css">
+
+    <!-- SCROLL REVEAL -->
+    <script src="../src/scrollreveal.min.js"></script>
+</head>
+<body>
+
+            <!-- header -->
+            <header class="bg-red py-8 lg:pt-6 lg:pb-14">
+                <div
+                class="container mx-auto lg:relative flex flex-col lg:flex-row
+                lg:justify-between gap-y-4 lg:gap-y-0">
+                    <!-- logo -->
+                    <div class="flex justify-center lg:justify-normal">
+                        <a href="#">
+                            <img src="../assets/logo-bg/logo-ffc.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="flex flex-col gap-y-4 lg:flex-row lg:gap-x-10 lg:gap-y-0">
+                        <!-- location -->
+                        <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                            <i class="ri-map-pin-2-fill text-2xl text-accent"></i>
+                            <div class="text-white">Your Location</div>
+                        </div>
+                        <!-- phone -->
+                        <div class="flex justify-center items-center gap-x-2 lg:justify-normal">
+                            <i class="ri-phone-fill text-2xl text-accent"></i>
+                            <div class="text-white">(+6281) 009 9876</div>
+                        </div>
+                        <!-- icon -->
+                        <div class="flex items-center mx-auto">
+                            <a
+                            href="#"
+                            target="_blank"
+                            class="mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-white text-white hover:border-accent hover:bg-accent hover:text-white"
+                            >
+                            <i class="ri-user-heart-fill"></i>
+                            </a>
+
+                            <a
+                            href="detail.html"
+                            target="_blank"
+                            class="mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-white text-white hover:border-accent hover:bg-accent hover:text-white"
+                            >
+                            <i class="ri-shopping-basket-2-fill"></i>
+                            </a>
+                        </div>
+
+                        <!-- mobile nav untuk testing pertama kali beri class left-0 biar keliatan, jadi -left[300px] belum ada-->
+                        <nav
+                        class="mnav bg-red fixed w-[300px] top-0 h-screen -left-[300px]
+                        shadow-2xl lg:hidden transition-all duration-300 z-10"
+                        >
+                            <!-- nav trigger btn   abis ini selsai ke main.js buat atur-->
+                            <div class="mnav__close-btn bg-primary w-8 h-8 relative -right-full top-8
+                            flex justify-center items-center rounded-tr-lg rounded-br-lg
+                            cursor-pointer transition-all"
+                            >
+                            <i class="mnav__close-btn-icon ri-arrow-right-s-line text-2xl text-white"></i>
+                            </div>
+
+                            <!-- logo, list, form -->
+                            <div class="px-12 flex flex-col gap-y-12 h-full">
+                                <!-- logo -->
+                                <a href="">
+                                    <img src="../assets/img/header/logo.svg" alt="">
+                                </a>
+                                <!-- List  -->
+                                <ul class="flex flex-col gap-y-5">
+                                    <li><a href="#" class="text-white hover:text-accent
+                                        transition-all duration-300">About Us</a>
+                                    </li>
+                                    <li><a href="detail-2.html" class="text-white hover:text-accent
+                                        transition-all duration-300">Find Us</a>
+                                    </li>
+                                    <li><a href="#" class="text-white hover:text-accent
+                                        transition-all duration-300">All Campaign</a>
+                                    </li>
+                                </ul>
+                                <!-- form -->
+                                <form class="relative flex gap-x-[10px]">
+                                    <label for="mnav-search-input">
+                                        <i class="ri-search-line text-2xl text-accent"></i>
+                                    </label>
+                                    <input type="text" id="mnav-search-input"
+                                    placeholder="Search..."
+                                    class="outline-none w-[160px] border-b-2 focus:border-b-2
+                                    focus:border-accent placeholder:italic">
+                                </form>
+                            </div>
+                        </nav>
+                        <!-- desktop nav -->
+                        <nav
+                        class="bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1
+                        h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]"
+                        >
+                            <!-- List -->
+                            <ul class="flex gap-x-4">
+                                <li><a href="#" class="border-r pr-4 text-black hover:text-accent 
+                                    transition-all duration-300">About Us</a>
+                                </li>
+                                <li><a href="detail-2.html" class="border-r pr-4 text-black hover:text-accent
+                                    transition-all duration-300">Find Us</a>
+                                </li>
+                                <li><a href="#" class="border-r pr-4 text-black hover:text-accent
+                                    transition-all duration-300">All Campaign</a>
+                                </li>
+                            </ul>
+                            <!-- form -->
+                            <form class="relative flex gap-y-[10px]">
+                                <label for="search-input" class="flex justify-center items-center group">
+                                    <i class="ri-search-line text-2xl text-accent"></i>
+                                </label>
+                                <input type="text" id="search-input" placeholder="Search..." class="outline-none w-[100px]
+                                focus:w-[180px] focus:border-b-2 focus:border-accent placeholder:italic
+                                placeholder:text-base transition-all duration-500">
+                            </form>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- hero -->
+            <section class="hero bg-services bg-cover bg-no-repeat bg-right py-12 xl:pt-12 xl:pb-0 overflow-hidden">
+                <div class="container mx-auto h-full">
+                    <!-- text & img -->
+                    <div class="flex flex-col xl:flex-row items-center justify-between h-full">
+                        <!-- text -->
+                        <div class="hero__text xl:w-[48%] text-center xl:text-left">
+                            <!-- title -->
+                            <h1 class="h1 mb-6 font-extrabold text-white">BARGAIN BUCKET MENU CAMPAIGN</h1>
+                            <!-- desc -->
+                            <p class="mb-[42px] md:max-w-xl text-white">
+                                Original Recipe chicken and fries, and plenty of it, Sometimes that's all you need to turn on average day into a great one.
+                            </p>
+                            <!-- btn -->
+                            <button class="btn btn-lg btn-outline mx-auto xl:mx-0 font-bold">Order Now</button>
+                        </div>
+                        <!-- image custome img nya dulu, baru text -->
+                        <div class="hero__img hidden xl:flex max-w-[814px] self-end">
+                            <img src="../assets/element/ayam-1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- shop -->
+            <section class="team mt-[40px]">
+            <div class="container mx-auto">
+                <!-- title -->
+                <div class="flex flex-col xl:flex-row gap-x-5 justify-between">
+                <h2 class="team__title h2 mb-[50px] text-center xl:text-left">
+                    SPECIAL MENU 
+                </h2>
+                <button class="rounded-[10px] btn-lg btn-accent hover:scale-105 duration-300" onclick="window.location.href='detail.html'">View More..</button>
+            </div>
+                <!-- slider -->
+                <div class="team__slider swiper min-h-[400px]">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slide 1 -->
+                            <div class="swiper-slide">
+                                <div class="flex flex-col md:flex-row gap-9">
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-6.png">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                    Classic Combo
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-7.png" alt="">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                    Super Star 1
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-3.png" alt="">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                Winger Combo 
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-4.png" alt="">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                Super Star 2
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-5.png" alt="">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                Super Star 3
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="swiper-slide">
+                                <div class="flex flex-col md:flex-row gap-9">
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-1.png">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                    Double Burger Cheese
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-1.png">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                    Double Burger Cheese
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-1.png">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                    Double Burger Cheese
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-1.png">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                    Double Burger Cheese
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-1.png">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                    Double Burger Cheese
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="swiper-slide">
+                                <div class="flex flex-col md:flex-row gap-9">
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-2.png">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                    Bucket Chicken Super
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-2.png">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                    Bucket Chicken Super
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-2.png">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                    Bucket Chicken Super
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-2.png">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                    Bucket Chicken Super
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- item -->
+                                    <div class="flex-1 flex flex-col xl:flex-row">
+                                        <div class="flex flex-col xl:flex-row items-center gap-[30px]">
+                                            <!-- img -->
+                                            <div class="hover:scale-90 duration-300">
+                                                <img src="../assets/element/menu-2.png">
+                                                <h3 class="team__title h3 text-center xl:text-center">
+                                                    Bucket Chicken Super
+                                                </h3>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- swiper pagination -->
+                        <div class="swiper-pagination"></div>               
+                </div>
+            </div>
+            </section>
+
+            <!-- banner -->
+            <section class="bg-testimonials bg-no-repeat bg-cover mb-[50px]">
+            <div id="controls-carousel" class="relative w-full" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-96 max-w-[725px] max-h-[423px] mx-auto">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../assets/element/banner-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                        <img src="../assets/element/banner-2.png" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../assets/element/banner-3.png" alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="../assets/element/banner-4.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider controls -->
+                <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                    <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
+            </section>
+
+            <!-- services -->
+            <section class="services mb-[50px]">
+            <!-- bg -->
+            <div class="bg-services bg-cover bg-no-repeat max-w-[1446px] mx-4 xl:mx-auto
+            rounded-[20px] xl:pt-[70px] px-6 xl:px-0 relative h-[368px] flex items-center
+            xl:items-start -z-10">
+                <div class="container mx-auto">
+                    <!-- text -->
+                    <div class="services__top flex items-center flex-col xl:flex-row xl:mb-[60px]">
+                        <h2 class="h2 text-white flex-1 mb-4 xl:mb-0 text-center xl:text-left">
+                            Spice up your day with our services 🔥 Order Now!
+                        </h2>
+                        <p class="text-white flex-1 text-center xl:text-left max-w-2xl xl:max-w-none">
+                            just click click, finished? Prepare your Moneyy. FFC will always be in your heart. Support Us.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- grid container -->
+            <div class="container mx-auto mt-8 xl:-mt-[144px] ">
+                <!-- grid -->
+                <div class="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
+                    <!-- grid items -->
+                    <div class="services__item bg-white p-[30px] rounded-[10px]
+                    shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+                    <!-- grid items icon -->
+                        <div class="mb-[15px]">
+                            <img src="../assets/icons/services/icon-1.svg" class="" alt="">
+                        </div>
+                    <!-- grid item tittle -->
+                        <h3 class="h3 mb-[10px]">Drive Thru</h3>
+                    <!-- grid items descriptions -->
+                        <p class="font-light leading-normal max-w-[300px]"> Lazy lazy out just contact us We are in everywhere Enjoy your day</p>
+                    </div>
+
+                    <!-- grid items -->
+                    <div class="services__item bg-white p-[30px] rounded-[10px]
+                    shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+                    <!-- grid items icon -->
+                        <div class="mb-[15px]">
+                            <img src="../assets/icons/services/icon-2.svg" class="" alt="">
+                        </div>
+                    <!-- grid item tittle -->
+                        <h3 class="h3 mb-[10px]">Catering</h3>
+                    <!-- grid items descriptions -->
+                        <p class="font-light leading-normal max-w-[300px]">Having a celebration, Many events, Confused how to celebrate?</p>
+                    </div>
+
+                    <!-- grid items -->
+                    <div class="services__item bg-white p-[30px] rounded-[10px]
+                    shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+                    <!-- grid items icon -->
+                        <div class="mb-[15px]">
+                            <img src="../assets/icons/services/icon-3.svg" class="" alt="">
+                        </div>
+                    <!-- grid item tittle -->
+                        <h3 class="h3 mb-[10px]">FFC Coffe</h3>
+                    <!-- grid items descriptions -->
+                        <p class="font-light leading-normal max-w-[300px]">Sleepy, where do you want to have coffee just call ffc Enjoy your day</p>
+                    </div>
+
+                    <!-- grid items -->
+                    <div class="services__item bg-white p-[30px] rounded-[10px]
+                    shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
+                    <!-- grid items icon -->
+                        <div class="mb-[15px]">
+                            <img src="../assets/icons/services/icon-4.svg" class="" alt="">
+                        </div>
+                    <!-- grid item tittle -->
+                        <h3 class="h3 mb-[10px]">Breakfast</h3>
+                    <!-- grid items descriptions -->
+                        <p class="font-light leading-normal max-w-[300px]">Hungry weight is still closed, we are loyal 24 hours for you. Let's Order Now</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- newsletter -->
+            <section class="newsletter bg-accent md:h-[444px] py-12 flex items-center relative
+        overflow-hidden" id="find">
+            <!-- patterns -->
+            <div class="absolute left-0 bottom-0">
+                <img src="../assets/img/newsletter/pattern.svg" alt="">
+            </div>
+            <!-- container -->
+            <div class="newslatter__container container mx-auto">
+                <!-- wrapper -->    
+                <div class="flex flex-col lg:flex-row lg:items-center lg:gap-x-[88px]">
+                <!-- text -->
+                <div class="flex-1 z-10 text-center md:text-left">
+                    <div class="text-base uppercase text-white tracking-[2.24px] font-medium">
+                        Our newsletter
+                    </div>
+                    <h1 class="h1 mb-4 text-white">Subscribe us to get more updates</h1>
+                </div>
+                <!-- form -->
+                <form class="flex-1">
+                    <div class="flex flex-col md:flex-row relative gap-y-4">
+                        <input type="text" placeholder="Your email address" class="rounded-full w-full h-[65px]
+                        bg-transparent border-2 border-white outline-none pl-[30px] placeholder:text-white focus:text-white">
+                        <button class="btn btn-lg btn-white md:absolute right-0">Subcribe</button>
+                    </div>
+                </form>
+                </div>
+            </div>
+            </section>
+
+            <!--! essentials -->
+            <section
+        id="essentials"
+        class="w-full h-[90vh] flex flex-col justify-center items-center"
+        >
+        <div class="title w-auto h-auto md:mb-5">
+        <h1 class="text-2xl md:text-3xl font-extrabold">
+            OUR EVENT
+        </h1>
+        </div>
+        <div
+        class="card-container w-[90%] h-3/4 py-3 px-3 flex flex-row justify-center"
+        >
+        <div
+            class="card w-[33%] h-full flex flex-col justify-center items-center mr-5 hover:cursor-pointer"
+        >
+            <img
+            src="../assets/element/event-1.png"
+            alt=""
+            class="w-full h-3/4 object-cover hover:brightness-110 duration-150"
+            />
+            <div class="text w-full h-auto hidden md:my-5 md:block">
+            <h2 class="text-xl font-medium">FFC X Honda DBL Liga Basket</h2>
+            </div>
+        </div>
+        <div
+            class="card w-[33%] h-full flex flex-col justify-center items-center hover:cursor-pointer"
+        >
+            <img
+            src="../assets/element/event-2.png"
+            alt=""
+            class="w-full h-3/4 object-cover hover:brightness-110 duration-150"
+            />
+            <div class="text w-full h-auto hidden md:my-5 md:block">
+            <h2 class="text-xl font-medium">FFC NSM Nasional</h2>
+            </div>
+        </div>
+        <div
+            class="card w-[33%] h-full flex flex-col justify-center items-center ml-5 hover:cursor-pointer"
+        >
+            <img
+            src="../assets/element/event-3.png"
+            alt=""
+            class="w-full h-3/4 object-cover hover:brightness-110 duration-150"
+            />
+            <div class="text w-full h-auto hidden md:my-5 md:block">
+            <h2 class="text-xl font-medium">FFC X Free Fire</h2>
+            </div>
+        </div>
+        </div>
+            </section>
+
+            <!-- footer -->
+            <footer class="footer bg-[#1E222A] pt-6 xl:pt-[150px] lg:pt-4">
+                <div class="container mx-auto pb-12 xl:pb-[100px]">
+                    <div class="flex flex-col xl:flex-row gap-x-5 gap-y-10">
+                        <!-- footer contact section -->
+                        <div class="footer__item flex-1">
+                            <!-- logo -->
+                            <a href="">
+                                <img class="mb-[30px]" src="../assets/logo-bg/logo-ffc.png" alt="">
+                            </a>
+                            <!-- descriptions -->
+                            <p class="mb-[20px] text-white">
+                                Let's get your order ready! Stuck for time? Just drive thru, esay right?
+                            </p>
+                            <!-- location, email,  phone-->
+                            <div class="flex flex-col gap-y-3 mb-10 text-white">
+                                <div class="flex items-center gap-x-[6px]">
+                                    <i class="ri-map-pin-fill text-[24px] text-red"></i>
+                                    <div>Your Location</div>
+                                </div>
+                                <div class="flex items-center gap-x-[6px]">
+                                    <i class="ri-phone-fill text-[24px] text-red"></i>
+                                    <div>(+6281) 009 9876</div>
+                                </div>
+                            </div>
+                            <!-- social media -->
+                            <div class="flex gap-[14px] text-[30px]">
+                                <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent hover:text-red
+                                cursor-pointer transition-all">
+                                    <i class="ri-facebook-circle-fill"></i>
+                                </div>
+                                <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent hover:text-red
+                                cursor-pointer transition-all">
+                                    <i class="ri-instagram-line"></i>
+                                </div>
+                                <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent hover:text-red
+                                cursor-pointer transition-all">
+                                <i class="ri-twitter-x-line"></i>
+                                </div>
+                                <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent hover:text-red
+                                cursor-pointer transition-all">
+                                <i class="ri-youtube-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- footer quick links section -->
+                        <div class="footer__item flex-1">
+                            <h4 class="h4 mb-5 text-accent">Quick Links</h4>
+                            <div class="flex gap-x-5">
+                                <!-- list 1 -->
+                                <ul class="flex-1 flex flex-col gap-y-5 text-white">
+                                    <li><a href="" class="hover:text-accent transition-all">About Us</a></li>
+                                    <li><a href="" class="hover:text-accent transition-all">Find Us</a></li>
+                                    <li><a href="" class="hover:text-accent transition-all">All Campaign</a></li>
+                                    <li><a href="" class="hover:text-accent transition-all">Event</a></li>
+                                </ul>
+                                <!-- list 2 -->
+                                <ul class="flex-1 flex flex-col gap-y-5 text-white">
+                                    <li><a href="" class="hover:text-accent transition-all">Drive Thru</a></li>
+                                    <li><a href="" class="hover:text-accent transition-all">Contact</a></li>
+                                    <li><a href="" class="hover:text-accent transition-all">News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- footer opening hours section -->
+                        <div class="footer__item flex-1 text-white">
+                            <h4 class="h4 mb-5 text-accent">Opening Hours</h4>
+                            <!-- list -->
+                            <div class="flex flex-col gap-5">
+                                <!-- item -->
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-center border-b pb-[10px]">
+                                        <div>Monday - Thrusday</div>
+                                        <div class="text-accent font-medium">09.00-09.00 am</div>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-center border-b pb-[10px]">
+                                        <div>Friday - Saturday</div>
+                                        <div class="text-accent font-medium">09.00-09.00 am</div>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-center border-b pb-[10px]">
+                                        <div>Sunday</div>
+                                        <div class="text-accent font-medium">09.00-09.00 am</div>
+                                    </div>
+                                </div>
+                                <!-- item -->
+                                <div class="flex-1">
+                                    <div class="flex justify-between items-center border-b pb-[10px]">
+                                        <div>Drive Thru</div>
+                                        <div class="text-accent font-medium">According to the gojek</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- copyright -->
+                <div class="py-[30px] border-t">
+                    <div class="container mx-auto text-center">
+                        <div class="font-light text-base">&copy; 2024 FFC - All rights reservered.</div>
+                    </div>
+                </div>
+            </footer>
+
+    <!-- SCRIPTS -->
+    <script src="../src/swiper-bundle.min.js"></script>
+    <script src="../src/main.js"></script>
+    <script src="../node_modules/flowbite/dist/flowbite.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFC</title>
+    <link rel="shortcut icon" href="../assets/logo-bg/logo-ffc.png" type="image/x-icon">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../public/output.css">
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="../public/swiper-bundle.min.css">
+
+    <!-- SCROLL REVEAL -->
+    <script src="../src/scrollreveal.min.js"></script>
+</head>
+<body>
+   
+        <!-- Navbar  -->
+        <nav class="bg-red border-gray-200 dark:bg-gray-900">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse mb-[10px]">
+            <img src="../assets/logo-bg/logo-ffc.png" />
+        </a>
+        <div class="flex items-center space-x-6 rtl:space-x-reverse">
+            <!-- icon -->
+            <div class="flex items-center mx-auto">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-white text-white hover:border-accent hover:bg-accent hover:text-white"
+                >
+                <i class="ri-user-heart-fill"></i>
+                </a>
+
+                <a
+                  href="detail.html"
+                  target="_blank"
+                  class="mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-white text-white hover:border-accent hover:bg-accent hover:text-white"
+                >
+                <i class="ri-shopping-basket-2-fill"></i>
+                </a>
+              </div>
+            <a href="login.html"
+            class="px-5 py-2 me-2 text-xs font-medium text-white bg-black hover:scale-[110%] duration-200 rounded-lg">Get
+           Login</a>
+    </div>
+        </nav>
+        <nav class="bg-accent dark:bg-gray-700">
+    <div class="max-w-screen-xl px-4 py-3 mx-auto">
+        <div class="flex items-center">
+            <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                <li>
+                    <a href="index.html" class="text-gray-900 text-white hover:underline" aria-current="page">About Us</a>
+                </li>
+                <li>
+                    <a href="#" class="text-gray-900 text-white hover:underline">Find Us</a>
+                </li>
+                <li>
+                    <a href="index.html" class="text-gray-900 text-white hover:underline">All Campaign</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </nav>
+
+        <!-- Map  -->
+        <section class="mx-auto mb-[50px]">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15489.691805322414!2d106.90532328117627!3d-6.218357870330379!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698caf849286b1%3A0x6c063c55b5404b97!2sKFC%20Raden%20Inten%20Jakarta!5e0!3m2!1sid!2sid!4v1708396491666!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full"></iframe>
+        </section>
+
+        <!-- Store  -->
+        <section>
+        <form class="mx-auto xl:w-[1200px] px-10 mb-[40px]">
+            <div class="flex">
+                <label for="search-dropdown" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Your Email</label>
+                
+                <div class="relative w-full">
+                    <input type="search" id="search-dropdown" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-gray-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" placeholder="Search Mockups, Logos, Design Templates..." required />
+                    <button type="submit" class="ri-search-eye-line absolute top-0 end-0 p-2.5 text-sm font-medium h-full text-white bg-blue-700 rounded-e-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </form>
+
+    <!-- pertama  -->
+    <div class="flex flex-col xl:flex-row mx-auto">
+        <!-- 1  -->
+        <div class="w-[500px] h-[310px] px-10 mb-[30px] hover:scale-105 duration-300">
+        <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+        <h5 class="mb-2 text-[20px] font-bold tracking-tight text-gray-900 dark:text-white px-6 py-2">ADAM MALIK MEDAN</h5>
+        <!-- img  -->
+        <div class="flex px-4 mx-auto mb-4">
+            <img src="../assets/logo-bg/log-1.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-2.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-3.png" class="h-6 px-2">
+        </div>
+        <p class="font-normal text-gray-700 text-black px-4 mb-4">JL. ADAM MALIK NO. 5 / 7, Medan, Sumatera Utara</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-phone-fill px-2"></i>08117157358 / 061-4520122</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-time-fill px-2"></i></i>00:00 - 23:59 WIB</p>
+        </a>
+        </div>
+        <!-- 2  -->
+        <div class="w-[500px] h-[310px] px-10 mb-[30px] hover:scale-105 duration-300">
+        <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+        <h5 class="mb-2 text-[20px] font-bold tracking-tight text-gray-900 dark:text-white px-6 py-2">ADAM MALIK MEDAN</h5>
+        <!-- img  -->
+        <div class="flex px-4 mx-auto mb-4">
+            <img src="../assets/logo-bg/log-1.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-2.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-3.png" class="h-6 px-2">
+        </div>
+        <p class="font-normal text-gray-700 text-black px-4 mb-4">JL. ADAM MALIK NO. 5 / 7, Medan, Sumatera Utara</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-phone-fill px-2"></i>08117157358 / 061-4520122</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-time-fill px-2"></i></i>00:00 - 23:59 WIB</p>
+        </a>
+        </div>
+        <!-- 3  -->
+        <div class="w-[500px] h-[310px] px-10 mb-[30px] hover:scale-105 duration-300">
+        <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+        <h5 class="mb-2 text-[20px] font-bold tracking-tight text-gray-900 dark:text-white px-6 py-2">ADAM MALIK MEDAN</h5>
+        <!-- img  -->
+        <div class="flex px-4 mx-auto mb-4">
+            <img src="../assets/logo-bg/log-1.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-2.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-3.png" class="h-6 px-2">
+        </div>
+        <p class="font-normal text-gray-700 text-black px-4 mb-4">JL. ADAM MALIK NO. 5 / 7, Medan, Sumatera Utara</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-phone-fill px-2"></i>08117157358 / 061-4520122</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-time-fill px-2"></i></i>00:00 - 23:59 WIB</p>
+        </a>
+        </div>
+        
+    </div>
+    <!-- kedua  -->
+    <div class="flex flex-col xl:flex-row mx-auto">
+        <!-- 1  -->
+        <div class="w-[500px] h-[310px] px-10 mb-[30px] hover:scale-105 duration-300">
+        <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+        <h5 class="mb-2 text-[20px] font-bold tracking-tight text-gray-900 dark:text-white px-6 py-2">ADAM MALIK MEDAN</h5>
+        <!-- img  -->
+        <div class="flex px-4 mx-auto mb-4">
+            <img src="../assets/logo-bg/log-1.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-2.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-3.png" class="h-6 px-2">
+        </div>
+        <p class="font-normal text-gray-700 text-black px-4 mb-4">JL. ADAM MALIK NO. 5 / 7, Medan, Sumatera Utara</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-phone-fill px-2"></i>08117157358 / 061-4520122</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-time-fill px-2"></i></i>00:00 - 23:59 WIB</p>
+        </a>
+        </div>
+        <!-- 2  -->
+        <div class="w-[500px] h-[310px] px-10 mb-[30px] hover:scale-105 duration-300">
+        <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+        <h5 class="mb-2 text-[20px] font-bold tracking-tight text-gray-900 dark:text-white px-6 py-2">ADAM MALIK MEDAN</h5>
+        <!-- img  -->
+        <div class="flex px-4 mx-auto mb-4">
+            <img src="../assets/logo-bg/log-1.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-2.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-3.png" class="h-6 px-2">
+        </div>
+        <p class="font-normal text-gray-700 text-black px-4 mb-4">JL. ADAM MALIK NO. 5 / 7, Medan, Sumatera Utara</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-phone-fill px-2"></i>08117157358 / 061-4520122</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-time-fill px-2"></i></i>00:00 - 23:59 WIB</p>
+        </a>
+        </div>
+        <!-- 3  -->
+        <div class="w-[500px] h-[310px] px-10 mb-[30px] hover:scale-105 duration-300">
+        <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+        <h5 class="mb-2 text-[20px] font-bold tracking-tight text-gray-900 dark:text-white px-6 py-2">ADAM MALIK MEDAN</h5>
+        <!-- img  -->
+        <div class="flex px-4 mx-auto mb-4">
+            <img src="../assets/logo-bg/log-1.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-2.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-3.png" class="h-6 px-2">
+        </div>
+        <p class="font-normal text-gray-700 text-black px-4 mb-4">JL. ADAM MALIK NO. 5 / 7, Medan, Sumatera Utara</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-phone-fill px-2"></i>08117157358 / 061-4520122</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-time-fill px-2"></i></i>00:00 - 23:59 WIB</p>
+        </a>
+        </div>
+        
+    </div>
+    <!-- ketiga -->
+    <div class="flex flex-col xl:flex-row mx-auto">
+        <!-- 1  -->
+        <div class="w-[500px] h-[310px] px-10 mb-[30px] hover:scale-105 duration-300">
+        <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+        <h5 class="mb-2 text-[20px] font-bold tracking-tight text-gray-900 dark:text-white px-6 py-2">ADAM MALIK MEDAN</h5>
+        <!-- img  -->
+        <div class="flex px-4 mx-auto mb-4">
+            <img src="../assets/logo-bg/log-1.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-2.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-3.png" class="h-6 px-2">
+        </div>
+        <p class="font-normal text-gray-700 text-black px-4 mb-4">JL. ADAM MALIK NO. 5 / 7, Medan, Sumatera Utara</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-phone-fill px-2"></i>08117157358 / 061-4520122</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-time-fill px-2"></i></i>00:00 - 23:59 WIB</p>
+        </a>
+        </div>
+        <!-- 2  -->
+        <div class="w-[500px] h-[310px] px-10 mb-[30px] hover:scale-105 duration-300">
+        <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+        <h5 class="mb-2 text-[20px] font-bold tracking-tight text-gray-900 dark:text-white px-6 py-2">ADAM MALIK MEDAN</h5>
+        <!-- img  -->
+        <div class="flex px-4 mx-auto mb-4">
+            <img src="../assets/logo-bg/log-1.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-2.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-3.png" class="h-6 px-2">
+        </div>
+        <p class="font-normal text-gray-700 text-black px-4 mb-4">JL. ADAM MALIK NO. 5 / 7, Medan, Sumatera Utara</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-phone-fill px-2"></i>08117157358 / 061-4520122</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-time-fill px-2"></i></i>00:00 - 23:59 WIB</p>
+        </a>
+        </div>
+        <!-- 3  -->
+        <div class="w-[500px] h-[310px] px-10 mb-[30px] hover:scale-105 duration-300">
+        <a href="#" class="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+        <h5 class="mb-2 text-[20px] font-bold tracking-tight text-gray-900 dark:text-white px-6 py-2">ADAM MALIK MEDAN</h5>
+        <!-- img  -->
+        <div class="flex px-4 mx-auto mb-4">
+            <img src="../assets/logo-bg/log-1.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-2.png" class="h-6 px-2">
+            <img src="../assets/logo-bg/log-3.png" class="h-6 px-2">
+        </div>
+        <p class="font-normal text-gray-700 text-black px-4 mb-4">JL. ADAM MALIK NO. 5 / 7, Medan, Sumatera Utara</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-phone-fill px-2"></i>08117157358 / 061-4520122</p>
+        <p class="font-normal text-gray-700 px-2"><i class="ri-time-fill px-2"></i></i>00:00 - 23:59 WIB</p>
+        </a>
+        </div>
+        
+    </div>
+    
+        </section>
+    
+        <!-- footer -->
+        <footer class="footer bg-[#1E222A] pt-6 xl:pt-[150px] lg:pt-4">
+        <div class="container mx-auto pb-12 xl:pb-[100px]">
+            <div class="flex flex-col xl:flex-row gap-x-5 gap-y-10">
+                <!-- footer contact section -->
+                <div class="footer__item flex-1">
+                    <!-- logo -->
+                    <a href="">
+                        <img class="mb-[30px]" src="../assets/logo-bg/logo-ffc.png" alt="">
+                    </a>
+                    <!-- descriptions -->
+                    <p class="mb-[20px] text-white">
+                        Let's get your order ready! Stuck for time? Just drive thru, esay right?
+                    </p>
+                    <!-- location, email,  phone-->
+                    <div class="flex flex-col gap-y-3 mb-10 text-white">
+                        <div class="flex items-center gap-x-[6px]">
+                            <i class="ri-map-pin-fill text-[24px] text-red"></i>
+                            <div>Your Location</div>
+                        </div>
+                        <div class="flex items-center gap-x-[6px]">
+                            <i class="ri-phone-fill text-[24px] text-red"></i>
+                            <div>(+6281) 009 9876</div>
+                        </div>
+                    </div>
+                    <!-- social media -->
+                    <div class="flex gap-[14px] text-[30px]">
+                        <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent hover:text-red
+                        cursor-pointer transition-all">
+                            <i class="ri-facebook-circle-fill"></i>
+                        </div>
+                        <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent hover:text-red
+                        cursor-pointer transition-all">
+                            <i class="ri-instagram-line"></i>
+                        </div>
+                        <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent hover:text-red
+                        cursor-pointer transition-all">
+                        <i class="ri-twitter-x-line"></i>
+                        </div>
+                        <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent hover:text-red
+                        cursor-pointer transition-all">
+                        <i class="ri-youtube-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer quick links section -->
+                <div class="footer__item flex-1">
+                    <h4 class="h4 mb-5 text-accent">Quick Links</h4>
+                    <div class="flex gap-x-5">
+                        <!-- list 1 -->
+                        <ul class="flex-1 flex flex-col gap-y-5 text-white">
+                            <li><a href="" class="hover:text-accent transition-all">About Us</a></li>
+                            <li><a href="" class="hover:text-accent transition-all">Find Us</a></li>
+                            <li><a href="" class="hover:text-accent transition-all">All Campaign</a></li>
+                            <li><a href="" class="hover:text-accent transition-all">Event</a></li>
+                        </ul>
+                        <!-- list 2 -->
+                        <ul class="flex-1 flex flex-col gap-y-5 text-white">
+                            <li><a href="" class="hover:text-accent transition-all">Drive Thru</a></li>
+                            <li><a href="" class="hover:text-accent transition-all">Contact</a></li>
+                            <li><a href="" class="hover:text-accent transition-all">News</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- footer opening hours section -->
+                <div class="footer__item flex-1 text-white">
+                    <h4 class="h4 mb-5 text-accent">Opening Hours</h4>
+                    <!-- list -->
+                    <div class="flex flex-col gap-5">
+                        <!-- item -->
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center border-b pb-[10px]">
+                                <div>Monday - Thrusday</div>
+                                <div class="text-accent font-medium">09.00-09.00 am</div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center border-b pb-[10px]">
+                                <div>Friday - Saturday</div>
+                                <div class="text-accent font-medium">09.00-09.00 am</div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center border-b pb-[10px]">
+                                <div>Sunday</div>
+                                <div class="text-accent font-medium">09.00-09.00 am</div>
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="flex-1">
+                            <div class="flex justify-between items-center border-b pb-[10px]">
+                                <div>Drive Thru</div>
+                                <div class="text-accent font-medium">According to the gojek</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- copyright -->
+        <div class="py-[30px] border-t">
+            <div class="container mx-auto text-center">
+                <div class="font-light text-base">&copy; 2024 FFC - All rights reservered.</div>
+            </div>
+        </div>
+        </footer>
+    
+<!-- SCRIPTS -->
+<script src="../src/swiper-bundle.min.js"></script>
+<script src="../src/main.js"></script>
+<script src="../node_modules/flowbite/dist/flowbite.js"></script>
+</body>
+</html>

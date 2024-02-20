@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFC</title>
+    <link rel="shortcut icon" href="../assets/logo-bg/logo-ffc.png" type="image/x-icon">
+    <!-- CSS  -->
+    <link rel="stylesheet" href="../public/output.css">
+    <!-- ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.min.css" rel="stylesheet">
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- SWIPER CSS -->
+    <link rel="stylesheet" href="../public/swiper-bundle.min.css">
+
+    <!-- SCROLL REVEAL -->
+    <script src="../src/scrollreveal.min.js"></script>
+</head>
+<body>
+   
+            <!-- Navbar  -->
+            <nav class="bg-red border-gray-200 dark:bg-gray-900">
+                <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse mb-[10px]">
+                        <img src="../assets/logo-bg/logo-ffc.png" />
+                    </a>
+                    <div class="flex items-center space-x-6 rtl:space-x-reverse">
+                        <!-- icon -->
+                        <div class="flex items-center mx-auto">
+                            <a
+                            href="#"
+                            target="_blank"
+                            class="mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-white text-white hover:border-accent hover:bg-accent hover:text-white"
+                            >
+                            <i class="ri-user-heart-fill"></i>
+                            </a>
+
+                            <a
+                            href="#"
+                            target="_blank"
+                            class="mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-white text-white hover:border-accent hover:bg-accent hover:text-white"
+                            >
+                            <i class="ri-shopping-basket-2-fill"></i>
+                            </a>
+                        </div>
+                        <a href="login.html"
+                        class="px-5 py-2 me-2 text-xs font-medium text-white bg-black hover:scale-[110%] duration-200 rounded-lg">Get
+                    Login</a>
+                </div>
+            </nav>
+            <nav class="bg-accent dark:bg-gray-700">
+                <div class="max-w-screen-xl px-4 py-3 mx-auto">
+                    <div class="flex items-center">
+                        <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                            <li>
+                                <a href="index.html" class="text-gray-900 text-white hover:underline" aria-current="page">About Us</a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="text-gray-900 text-white hover:underline">Find Us</a>
+                            </li>
+                            <li>
+                                <a href="index.html" class="text-gray-900 text-white hover:underline">All Campaign</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Shop  -->
+            <section class="mt-[40px]">
+            <div class="container mx-auto">
+                <div class="flex flex-row justify-between mb-[50px]">
+                    <h2 class="blog__title h3 text-center xl:text-left">Practical</h2>
+                </div>
+
+                <!-- blog post -->
+                <div class="flex flex-col xl:flex-row gap-y-6 xl:gap-y-0 items-center
+                            xl:justify-between mb-[50px]">
+                    <!-- post 1 -->
+                    <div onclick="window.location.href='detail.html'" class="blog__post max-w-[250px] xl:max-w-[15rem] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+                        <!-- img -->
+                        <div class="relative overflow-hidden">
+                            <img class="transition-all duration-300 w-[20rem] xl:w-[15rem] align-middle" src="../assets/element/p-1.png">
+                        </div>
+                        <!-- text -->
+                        <div class="px-5 mb-[10px]">
+                            <!-- title -->
+                            <h4 class="h5 font-semibold flex justify-between">Korean<br>Don<p class="text-primary font-semibold text-[18px]">Rp15.454</p></h4>
+                        </div>
+                                <div class="px-5">
+                                    <span class="font-light text-[15px] text-secondary">Korean Don</span>
+                                    <button class="rounded-[10px] btn-sm text-white font-bold bg-red w-full mb-[25px]">Added +</button>
+                                </div>
+                        </div>
+                    <!-- post 2 -->
+                    <div onclick="window.location.href='detail.html'" class="blog__post max-w-[250px] xl:max-w-[15rem] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+                        <!-- img -->
+                        <div class="relative overflow-hidden">
+                            <img class="transition-all duration-300 w-[20rem] xl:w-[20rem] align-middle" src="../assets/element/p-2.png" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="px-5 mb-[10px]">
+                            <!-- title -->
+                            <h4 class="h5 font-semibold flex justify-between">Colonel Burger<p class="text-primary font-semibold text-[18px]">Rp25.800</p></h4>
+                        </div>
+                                <div class="px-5">
+                                    <span class="font-light text-[15px] text-secondary">Colonel Burger</span>
+                                    <button class="rounded-[10px] btn-sm text-white font-bold bg-red w-full mb-[25px]">Added +</button>
+                                </div>
+                    </div>
+                    <!-- post 3 -->
+                    <div onclick="window.location.href='detail.html'" class="blog__post max-w-[250px] xl:max-w-[15rem] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+                        <!-- img -->
+                        <div class="relative overflow-hidden">
+                            <img class="transition-all duration-300 w-[20rem] xl:w-[20rem] align-middle" src="../assets/element/p-3.png" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="px-5 mb-[10px]">
+                            <!-- title -->
+                            <h4 class="h5 font-semibold flex justify-between">Wrap<br>Twisty<p class="text-primary font-semibold text-[18px]">Rp16.760</p></h4>
+                        </div>
+                                <div class="px-5">
+                                    <span class="font-light text-[15px] text-secondary">Wrap Twisty</span>
+                                    <button class="rounded-[10px] btn-sm text-white font-bold bg-red w-full mb-[25px]">Added +</button>
+                                </div>
+                    </div>
+                    <!-- post 4 -->
+                    <div onclick="window.location.href='detail.html'" class="blog__post max-w-[250px] xl:max-w-[15rem] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+                        <!-- img -->
+                        <div class="relative overflow-hidden">
+                            <img class="transition-all duration-300 w-[20rem] xl:w-[20rem] align-middle" src="../assets/element/p-5.png" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="px-5 mb-[10px]">
+                            <!-- title -->
+                            <h4 class="h5 font-semibold flex justify-between">French<br>Fries<p class="text-primary font-semibold text-[18px]">Rp14.760</p></h4>
+                        </div>
+                                <div class="px-5">
+                                    <span class="font-light text-[15px] text-secondary">French Fries</span>
+                                    <button class="rounded-[10px] btn-sm text-white font-bold bg-red w-full mb-[25px]">Added +</button>
+                                </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- kedua  -->
+            <div class="container mx-auto">
+                <div class="flex flex-row justify-between mb-[50px]">
+                    <h2 class="blog__title h3 text-center xl:text-left">Drinks</h2>
+                </div>
+
+                <!-- blog post -->
+                <div class="flex flex-col xl:flex-row gap-y-6 xl:gap-y-0 items-center
+                            xl:justify-between mb-[50px]">
+                    <!-- post 1 -->
+                    <div onclick="window.location.href='detail.html'" class="blog__post max-w-[250px] xl:max-w-[15rem] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+                        <!-- img -->
+                        <div class="relative overflow-hidden">
+                            <img class="transition-all duration-300 w-[20rem] xl:w-[15rem] align-middle" src="../assets/element/d-1.png" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="px-5 mb-[10px]">
+                            <!-- title -->
+                            <h4 class="h5 font-semibold flex justify-between">Yubari<br>Float<p class="text-primary font-semibold text-[18px]">Rp15.454</p></h4>
+                        </div>
+                                <div class="px-5">
+                                    <span class="font-light text-[15px] text-secondary">Yubari Float</span>
+                                    <button class="rounded-[10px] btn-sm text-white font-bold bg-red w-full mb-[25px]">Added +</button>
+                                </div>
+                        </div>
+                    <!-- post 2 -->
+                    <div onclick="window.location.href='detail.html'" class="blog__post max-w-[250px] xl:max-w-[15rem] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+                        <!-- img -->
+                        <div class="relative overflow-hidden">
+                            <img class="transition-all duration-300 w-[20rem] xl:w-[20rem] align-middle" src="../assets/element/d-2.png" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="px-5 mb-[10px]">
+                            <!-- title -->
+                            <h4 class="h5 font-semibold flex justify-between">Hazelnut<br>Coffe<p class="text-primary font-semibold text-[18px]">Rp22.890</p></h4>
+                        </div>
+                                <div class="px-5">
+                                    <span class="font-light text-[15px] text-secondary">Hazelnut Coffe</span>
+                                    <button class="rounded-[10px] btn-sm text-white font-bold bg-red w-full mb-[25px]">Added +</button>
+                                </div>
+                    </div>
+                    <!-- post 3 -->
+                    <div onclick="window.location.href='detail.html'" class="blog__post max-w-[250px] xl:max-w-[15rem] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+                        <!-- img -->
+                        <div class="relative overflow-hidden">
+                            <img class="transition-all duration-300 w-[20rem] xl:w-[20rem] align-middle" src="../assets/element/d-4.png" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="px-5 mb-[10px]">
+                            <!-- title -->
+                            <h4 class="h5 font-semibold flex justify-between">Iced Lemon<br>Tea<p class="text-primary font-semibold text-[18px]">Rp14.700</p></h4>
+                        </div>
+                                <div class="px-5">
+                                    <span class="font-light text-[15px] text-secondary">Iced Lemon Tea</span>
+                                    <button class="rounded-[10px] btn-sm text-white font-bold bg-red w-full mb-[25px]">Added +</button>
+                                </div>
+                    </div>
+                    <!-- post 4 -->
+                    <div onclick="window.location.href='detail.html'" class="blog__post max-w-[250px] xl:max-w-[15rem] shadow-custom2 rounded-[10px] overflow-hidden cursor-pointer group">
+                        <!-- img -->
+                        <div class="relative overflow-hidden">
+                            <img class="transition-all duration-300 w-[20rem] xl:w-[20rem] align-middle" src="../assets/element/d-5.png" alt="">
+                        </div>
+                        <!-- text -->
+                        <div class="px-5 mb-[10px]">
+                            <!-- title -->
+                            <h4 class="h5 font-semibold flex justify-between">Hot Cafe<br>Latte<p class="text-primary font-semibold text-[18px]">Rp18.540</p></h4>
+                        </div>
+                                <div class="px-5">
+                                    <span class="font-light text-[15px] text-secondary">Hot Cafe Latte</span>
+                                    <button class="rounded-[10px] btn-sm text-white font-bold bg-red w-full mb-[25px]">Added +</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                 </section>
+
+            <!-- Promo  -->
+            <section class="detail mt-[5rem] mx-auto mb-[40px]">
+
+            <div class="container flex flex-col xl:flex-row mx-auto">
+                    
+                <div id="default-carousel" class="relative w-[500px] mx-auto" data-carousel="slide">
+                    <!-- Carousel wrapper -->
+                    <div class="relative overflow-hidden rounded-lg xl:w-[500px] xl:h-[500px] w-[300px] h-[300px] mx-auto sm:">
+                        <!-- Item 1 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="../assets/element/pro-1.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="../assets/element/pro-2.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                            <img src="../assets/element/pro-3.png" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                        </div>
+                    </div>
+                    <!-- Slider indicators -->
+                    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+                        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+                    </div>
+                    <!-- Slider controls -->
+                    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                            </svg>
+                            <span class="sr-only">Previous</span>
+                        </span>
+                    </button>
+                    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+                        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                            </svg>
+                            <span class="sr-only">Next</span>
+                        </span>
+                    </button>
+                </div>
+
+                    <!-- Keterangan -->
+                    <div class="flex-1 flex flex-col text-center xl:ml-[20px] mt-5 xl:max-w-[30rem] xl:text-left xl:mt-6 px-6 mx-auto">
+                        <!-- name -->
+                        <h3 class="font-semibold mb-[10px] text-[15px] lg:text-[30px]">50% BIGGG PROMOOO??!<br>CARI TAHU SEGERAA</h4>
+                        <!-- price -->
+                        <div class="flex justify-center mt-2 xl:flex-row xl:justify-start xl:mt-5">
+                            <p class="text-primary font-semibold text-[18px] xl:text-[35px]">
+                                Rp90.000
+                            </p>
+                            <div>
+                                <span class="font-light ml-1 text-[13px] xl:text-[18px] line-through text-secondary">Rp163.036</span>
+                                <span class="font-semibold text-[10px] xl:text-[13px] border-none px-1.5 rounded-[3px] bg-tertiary text-red">50%</span>
+                            </div>
+                        </div>
+                        <!-- desk -->
+                        <ul class="text-primary text-[13px] xl:text-[17px] xl:mt-5 text-left list-disc">
+                            <li>Get the FFC promo immediately, cheap against expensive. Get 9 pcs of chicken with 50% discount, why don't you want it?</li>
+                            <li>Get the FFC promo immediately, cheap against expensive. Get 9 pcs of chicken with 50% discount, why don't you want it?</li>
+                            
+                        </ul>
+
+                    <!-- other -->
+                    <div class="flex items-center text-[12px] gap-x-4 mt-5 xl:text-[18px] xl:gap-x-5 text-secondary">
+                        <a href="#" class="hover:text-accent"><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i></a>
+                        <a href="#" class="hover:text-accent"><i class="ri-map-pin-line"></i> Your Location</a>
+                        <a href="#" class="hover:text-accent"><i class="ri-motorbike-fill"></i> Drive Thru</a>
+                    </div>
+                </div>
+            </div>
+            </section>
+
+            <!-- footer -->
+            <footer class="footer bg-[#1E222A] pt-6 xl:pt-[150px] lg:pt-4">
+            <div class="container mx-auto pb-12 xl:pb-[100px]">
+                <div class="flex flex-col xl:flex-row gap-x-5 gap-y-10">
+                    <!-- footer contact section -->
+                    <div class="footer__item flex-1">
+                        <!-- logo -->
+                        <a href="">
+                            <img class="mb-[30px]" src="../assets/logo-bg/logo-ffc.png" alt="">
+                        </a>
+                        <!-- descriptions -->
+                        <p class="mb-[20px] text-white">
+                            Let's get your order ready! Stuck for time? Just drive thru, esay right?
+                        </p>
+                        <!-- location, email,  phone-->
+                        <div class="flex flex-col gap-y-3 mb-10 text-white">
+                            <div class="flex items-center gap-x-[6px]">
+                                <i class="ri-map-pin-fill text-[24px] text-red"></i>
+                                <div>Your Location</div>
+                            </div>
+                            <div class="flex items-center gap-x-[6px]">
+                                <i class="ri-phone-fill text-[24px] text-red"></i>
+                                <div>(+6281) 009 9876</div>
+                            </div>
+                        </div>
+                        <!-- social media -->
+                        <div class="flex gap-[14px] text-[30px]">
+                            <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent hover:text-red
+                            cursor-pointer transition-all">
+                                <i class="ri-facebook-circle-fill"></i>
+                            </div>
+                            <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent hover:text-red
+                            cursor-pointer transition-all">
+                                <i class="ri-instagram-line"></i>
+                            </div>
+                            <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent hover:text-red
+                            cursor-pointer transition-all">
+                            <i class="ri-twitter-x-line"></i>
+                            </div>
+                            <div class="p-[10px] rounded-[10px] shadow-custom2 text-accent hover:text-red
+                            cursor-pointer transition-all">
+                            <i class="ri-youtube-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer quick links section -->
+                    <div class="footer__item flex-1">
+                        <h4 class="h4 mb-5 text-accent">Quick Links</h4>
+                        <div class="flex gap-x-5">
+                            <!-- list 1 -->
+                            <ul class="flex-1 flex flex-col gap-y-5 text-white">
+                                <li><a href="" class="hover:text-accent transition-all">About Us</a></li>
+                                <li><a href="" class="hover:text-accent transition-all">Find Us</a></li>
+                                <li><a href="" class="hover:text-accent transition-all">All Campaign</a></li>
+                                <li><a href="" class="hover:text-accent transition-all">Event</a></li>
+                            </ul>
+                            <!-- list 2 -->
+                            <ul class="flex-1 flex flex-col gap-y-5 text-white">
+                                <li><a href="" class="hover:text-accent transition-all">Drive Thru</a></li>
+                                <li><a href="" class="hover:text-accent transition-all">Contact</a></li>
+                                <li><a href="" class="hover:text-accent transition-all">News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- footer opening hours section -->
+                    <div class="footer__item flex-1 text-white">
+                        <h4 class="h4 mb-5 text-accent">Opening Hours</h4>
+                        <!-- list -->
+                        <div class="flex flex-col gap-5">
+                            <!-- item -->
+                            <div class="flex-1">
+                                <div class="flex justify-between items-center border-b pb-[10px]">
+                                    <div>Monday - Thrusday</div>
+                                    <div class="text-accent font-medium">09.00-09.00 am</div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex-1">
+                                <div class="flex justify-between items-center border-b pb-[10px]">
+                                    <div>Friday - Saturday</div>
+                                    <div class="text-accent font-medium">09.00-09.00 am</div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex-1">
+                                <div class="flex justify-between items-center border-b pb-[10px]">
+                                    <div>Sunday</div>
+                                    <div class="text-accent font-medium">09.00-09.00 am</div>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="flex-1">
+                                <div class="flex justify-between items-center border-b pb-[10px]">
+                                    <div>Drive Thru</div>
+                                    <div class="text-accent font-medium">According to the gojek</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- copyright -->
+            <div class="py-[30px] border-t">
+                <div class="container mx-auto text-center">
+                    <div class="font-light text-base">&copy; 2024 FFC - All rights reservered.</div>
+                </div>
+            </div>
+            </footer>
+
+<!-- SCRIPTS -->
+<script src="../src/swiper-bundle.min.js"></script>
+<script src="../src/main.js"></script>
+<script src="../node_modules/flowbite/dist/flowbite.js"></script>
+<!-- scroll reveal -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
